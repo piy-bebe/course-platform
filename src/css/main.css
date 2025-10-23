@@ -8,3 +8,5 @@
 
 /* home page */
 @import url('pages/home/index.css');
+
+@import url('components/header.css');
