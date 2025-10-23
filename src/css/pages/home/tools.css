@@ -1,0 +1,27 @@
+.tools__title {
+  font-size: 24px;
+  font-weight: 300;
+
+  margin-bottom: 15px;
+}
+
+.tools__block {
+  display: inline-block;
+
+  padding: 15px;
+
+  background-color: #303030;
+  border-radius: 10px;
+}
+.tools__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+}
+.tools__link {
+  font-size: 24px;
+  font-weight: 300;
+
+  color: #87bfff;
+  border-bottom: 1px solid #87bfff;
+}

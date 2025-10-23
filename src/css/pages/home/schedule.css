@@ -1,16 +1,15 @@
-.home__title {
-  font-weight: 300;
+.schedule {
   margin-bottom: 80px;
 }
 
-.home__subtitle {
+.schedule__title {
   margin-bottom: 15px;
 
   font-weight: 300;
   font-size: 24px;
 }
 
-.home__block {
+.schedule__block {
   max-width: 840px;
   width: 100%;
   padding: 15px;
@@ -20,25 +19,25 @@
   border-radius: 10px;
 }
 
-.home__lessons {
+.schedule__lessons {
   display: flex;
   justify-content: space-between;
 
   margin-bottom: 20px;
 }
 
-.home__info {
+.schedule__info {
   font-size: 24px;
   font-weight: 300;
 }
 
-.home__link {
+.schedule__link {
   margin-right: 11px;
   color: #87bfff;
   border-bottom: 1px solid #87bfff;
 }
 
-.home__next {
+.schedule__next {
   font-size: 18px;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.7);

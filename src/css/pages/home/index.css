@@ -1,0 +1,7 @@
+@import url('schedule.css');
+@import url('tools.css');
+
+.home__title {
+  font-weight: 300;
+  margin-bottom: 80px;
+}
