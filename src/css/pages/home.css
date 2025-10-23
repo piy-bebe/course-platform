@@ -1,0 +1,45 @@
+.home__title {
+  font-weight: 300;
+  margin-bottom: 80px;
+}
+
+.home__subtitle {
+  margin-bottom: 15px;
+
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.home__block {
+  max-width: 840px;
+  width: 100%;
+  padding: 15px;
+
+  background-color: #303030;
+
+  border-radius: 10px;
+}
+
+.home__lessons {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.home__info {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.home__link {
+  margin-right: 11px;
+  color: #87bfff;
+  border-bottom: 1px solid #87bfff;
+}
+
+.home__next {
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+}

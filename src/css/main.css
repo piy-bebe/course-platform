@@ -2,3 +2,7 @@
 @import url('base/reset.css');
 @import url('base/variables.css');
 @import url('base/global.css');
+
+/*  */
+@import url('layout/page.css');
+@import url('pages/home.css');
