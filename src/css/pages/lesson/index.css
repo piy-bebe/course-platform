@@ -17,3 +17,43 @@
 
   color: rgba(255, 255, 255, 0.7);
 }
+
+.block {
+  margin-bottom: 60px;
+}
+
+.block__title {
+  margin-bottom: 20px;
+
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.block__area {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(48, 48, 48, 1);
+}
+
+.block__link {
+  font-size: 24px;
+  font-weight: 300;
+
+  color: #87bfff;
+
+  border-bottom: 1px solid #87bfff;
+}
+
+.block__header {
+  font-size: 24px;
+  font-weight: 300;
+
+  margin-bottom: 20px;
+}
+
+.block__text {
+  font-size: 20px;
+  font-weight: 300;
+
+  color: #ffffffb2;
+}
