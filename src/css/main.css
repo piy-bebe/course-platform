@@ -10,3 +10,6 @@
 @import url('pages/home/index.css');
 
 @import url('components/header.css');
+
+/* Уроки */
+@import url('pages/lessons/index.css');
