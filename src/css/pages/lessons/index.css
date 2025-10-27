@@ -1,0 +1,49 @@
+.lessons__title {
+  font-family: var(--font-main);
+  font-size: 36px;
+  font-weight: 300;
+
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 493px);
+
+  gap: 20px 20px;
+}
+
+.grid__item {
+  border: 2px solid transparent;
+
+  padding: 20px;
+  background-color: #303030;
+  border-radius: 10px;
+}
+
+.grid__item:hover {
+  border: 2px solid #87bfff;
+}
+
+.grid__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.grid__lesson {
+  font-family: var(--font-main);
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.grid__date {
+  font-family: var(--font-main);
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.grid__title {
+  font-size: 24px;
+  font-weight: 300;
+}
