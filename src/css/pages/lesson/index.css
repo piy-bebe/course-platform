@@ -1,0 +1,19 @@
+.header__block {
+  display: flex;
+  margin-top: 40px;
+  gap: 0 60px;
+}
+
+.header__subtitle {
+  margin-bottom: 8px;
+
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.header__info {
+  font-size: 24px;
+  font-weight: 300;
+
+  color: rgba(255, 255, 255, 0.7);
+}

@@ -11,5 +11,8 @@
 
 @import url('components/header.css');
 
-/* Уроки */
+/* Страница с уроками */
 @import url('pages/lessons/index.css');
+
+/* Страница с уроком */
+@import url('pages/lesson/index.css');
