@@ -32,3 +32,13 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media (max-width: 402px) {
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .header__title {
+    font-size: 20px;
+  }
+}

@@ -42,3 +42,16 @@
   font-weight: 300;
   color: rgba(255, 255, 255, 0.7);
 }
+
+@media (max-width: 560px) {
+  .schedule__lessons {
+    flex-direction: column;
+    gap: 15px 0;
+  }
+}
+
+@media (max-width: 402px) {
+  .schedule__title {
+    font-size: 16px;
+  }
+}
