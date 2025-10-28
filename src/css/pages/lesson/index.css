@@ -17,3 +17,17 @@
 
   color: rgba(255, 255, 255, 0.7);
 }
+
+@media (max-width: 570px) {
+  .header__block {
+    gap: 0 30px;
+  }
+
+  .header__column {
+    min-width: 92px;
+  }
+
+  .header__info {
+    font-size: 18px;
+  }
+}

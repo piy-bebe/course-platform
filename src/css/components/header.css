@@ -33,6 +33,12 @@
   background-position: center;
 }
 
+@media (max-width: 570px) {
+  .header__top {
+    gap: 0 40px;
+  }
+}
+
 @media (max-width: 402px) {
   .header {
     margin-bottom: 40px;
