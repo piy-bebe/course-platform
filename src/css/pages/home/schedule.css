@@ -49,9 +49,3 @@
     gap: 15px 0;
   }
 }
-
-@media (max-width: 402px) {
-  .schedule__title {
-    font-size: 16px;
-  }
-}
