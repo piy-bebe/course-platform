@@ -56,10 +56,11 @@
 
   .header__link {
     font-size: 18px;
+    line-height: 0.5;
   }
 
   .header__link::before {
-    top: 2.1px;
+    top: -4px;
     left: -20px;
     width: 16px;
     height: 18px;
