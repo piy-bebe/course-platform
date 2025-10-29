@@ -8,7 +8,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
 
   gap: 20px 20px;
 }
@@ -48,7 +48,16 @@
   font-weight: 300;
 }
 
+@media (max-width: 1240px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+  }
+}
+
 @media (max-width: 465px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
   .lessons__title {
     font-size: 26px;
   }
