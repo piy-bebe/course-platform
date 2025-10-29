@@ -7,30 +7,29 @@
 .header__top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__title {
   font-weight: 300;
 }
 
+.header__back {
+  display: flex;
+  align-items: center;
+  gap: 0 5px;
+}
+
+.header__arrow {
+  position: relative;
+  top: 2px; /* Микро-корректировка если нужно */
+}
+
 .header__link {
+  display: flex;
   position: relative;
   font-weight: 300;
   font-size: 24px;
-}
-
-.header__link::before {
-  content: '';
-  position: absolute;
-  top: 3.1px;
-  left: -30px;
-  display: inline-block;
-  width: 22px;
-  height: 24px;
-  background-image: url('../../images/back.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 @media (max-width: 630px) {
@@ -42,6 +41,10 @@
 
   .header__title {
     text-align: center;
+  }
+
+  .header__arrow {
+    top: 1px; /* Микро-корректировка если нужно */
   }
 }
 
@@ -56,13 +59,9 @@
 
   .header__link {
     font-size: 18px;
-    line-height: 0.5;
   }
 
-  .header__link::before {
-    top: -4px;
-    left: -20px;
-    width: 16px;
+  .header__arrow {
     height: 18px;
   }
 }
