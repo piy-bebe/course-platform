@@ -8,7 +8,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 493px);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 
   gap: 20px 20px;
 }
@@ -46,4 +46,14 @@
 .grid__title {
   font-size: 24px;
   font-weight: 300;
+}
+
+@media (max-width: 465px) {
+  .lessons__title {
+    font-size: 26px;
+  }
+
+  .grid__title {
+    font-size: 18px;
+  }
 }
