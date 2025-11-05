@@ -24,6 +24,11 @@
   border-bottom: 1px solid #87bfff;
 }
 
+.block__link-close {
+  color: #ff8787;
+  border-bottom: 1px solid #ff8787;
+}
+
 .block__link-text {
   font-size: 20px;
 }
