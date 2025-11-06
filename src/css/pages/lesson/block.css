@@ -71,6 +71,8 @@
 .block__item {
   margin-bottom: 10px;
 
+  line-height: 1.25;
+
   font-size: 20px;
   font-weight: 300;
   color: #ffffffb2;
