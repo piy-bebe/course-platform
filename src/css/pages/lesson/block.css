@@ -50,11 +50,11 @@
 .block__text {
   margin-bottom: 25px;
 
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 300;
-  line-height: 1.25;
+  line-height: 1.5;
 
-  color: #ffffffb2;
+  color: #ffffff;
 }
 
 .block__list {
@@ -75,7 +75,11 @@
 
   font-size: 20px;
   font-weight: 300;
-  color: #ffffffb2;
+  color: #ffffff;
+}
+
+.block__item::marker {
+  color: #87bfff;
 }
 
 .text-color-blue {
@@ -84,4 +88,48 @@
 
 .text-color-orange {
   color: #ffbf87;
+}
+
+/* CODE */
+
+.block__code {
+  border: 2px dashed #656565;
+  border-radius: 5px;
+
+  padding: 20px;
+  margin-bottom: 25px;
+  font-family: Consolas;
+  font-size: 24px;
+}
+
+.block__tag-name {
+  font-family: Consolas;
+  color: #87bfff;
+}
+.block__class-name {
+  font-family: Consolas;
+  color: #ffe387;
+}
+.block__command {
+  font-family: Consolas;
+  color: #87ff8b;
+}
+
+.block__code-tab {
+  display: block;
+  margin: 15px 0 15px 20px;
+}
+
+.block__image {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 25px;
+}
+
+.block__quote {
+  border: 2px dashed #ffe387;
+  border-radius: 10px;
+
+  padding: 20px;
 }

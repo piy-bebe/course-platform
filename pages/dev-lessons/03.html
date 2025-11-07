@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../src/css/main.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="header__top">
+          <h1 class="header__title">Занятие по разработке №2 | дополнительный материал</h1>
+          <div class="header__back">
+            <img class="header__arrow" src="../../src/images/back.svg" alt="" />
+            <a class="header__link" href="../development.html"> назад</a>
+          </div>
+        </div>
+
+        <div class="header__block">
+          <div class="header__column">
+            <p class="header__subtitle">Тема</p>
+            <p class="header__info">
+              Тег &lt;<span class="block__tag-name">div</span>&gt; группирование элементов
+            </p>
+          </div>
+          <div class="header__column">
+            <p class="header__subtitle">Дата</p>
+            <p class="header__info">06 ноября</p>
+          </div>
+        </div>
+      </header>
+
+      <main class="lesson">
+        <section class="block">
+          <h2 class="block__title">Начнем с самого простого</h2>
+          <div class="block__area">
+            <p class="block__text">
+              Все строительство сайта начинается с тега <span class="block__tag-name">div</span> - это кирпичик в
+              построении сайта, как кубики лего :)
+            </p>
+
+            <div class="block__code">
+              &lt;<span class="block__tag-name">div</span>&gt;
+              <span class="block__code-tab">С помощью данного тега, можно сгруппировать элементы </span>
+              &lt;/<span class="block__tag-name">div</span>&gt;
+            </div>
+
+            <p class="block__text">
+              Например, сгруппирируем тег <span class="block__tag-name">h2</span> и тег
+              <span class="block__tag-name">p</span>
+            </p>
+
+            <div class="block__code">
+              &lt;<span class="block__tag-name">div</span>&gt;
+              <span class="block__code-tab">
+                &lt;<span class="block__tag-name">h2</span>&gt;Название товара&lt;/<span class="block__tag-name"
+                  >h2</span
+                >&gt;<br />&lt;<span class="block__tag-name">p</span>&gt;Какое-то описание товара&lt;/<span
+                  class="block__tag-name"
+                  >p</span
+                >&gt;
+              </span>
+              &lt;/<span class="block__tag-name">div</span>&gt;
+            </div>
+
+            <p class="block__text">
+              Что дает данная разметка выше? Просто группирует элементы в одном блоке и выглядит это так:
+            </p>
+            <a class="block__image" href="images/block-div.svg" target="_blank"
+              ><img src="images/block-div.svg" alt=""
+            /></a>
+
+            <p class="block__text">
+              Внимательно посмотрите на структуру (картинку выше), тут видно, что внутри
+              <span class="block__tag-name">div</span> находятся все элементы (<span class="block__tag-name"
+                >h2</span
+              >, <span class="block__tag-name">p</span>), которые мы написали. Группировка с помощью
+              <span class="block__tag-name">div</span> дает возможность удобно управлять элементами внутри,
+              центрировать, двигать влево и вправо, выравнивать так как нам нужно. А как именно управлять, расскажу
+              в следующем уроке такого формата, там мы затронем
+              <span class="text-color-orange">display: flex</span>.
+            </p>
+            <p class="block__text">
+              Важно понимать такую терминологию: элемент, который хранит внутри себя теги, называют
+              <span class="text-color-orange">родителем</span>:
+            </p>
+            <a class="block__image" href="images/parents-block.svg" target="_blank"
+              ><img src="images/parents-block.svg" alt=""
+            /></a>
+            <p class="block__text">
+              А теги которые находятся внутри данного <span class="block__tag-name">div</span>, называют
+              <span class="text-color-orange">детьми </span>или
+              <span class="text-color-orange">дочерними элементами</span>:
+            </p>
+            <a class="block__image" href="images/children-blocks.svg" target="_blank"
+              ><img src="images/children-blocks.svg" alt=""
+            /></a>
+            <p class="block__text">
+              Допустим такую ситуацию. У нас есть витрина с товарами (большой блок, внутри которого маленькие
+              блоки). Для наглядности, напишем разметку и разберем структуру и работу с блоком
+              <span class="block__tag-name">div</span>. Начнем с главного блока, который будет группировать
+              карточки с продуктами и дадим ему класс <span class="block__class-name">products</span>. Напишем
+              разметку:
+            </p>
+            <div class="block__code">
+              &lt;<span class="block__tag-name">div</span> class=<span class="block__class-name">"products"</span
+              >&gt; Тут будут карточки с товарами &lt;/<span class="block__tag-name">div</span>&gt;
+            </div>
+            <p class="block__text">
+              Продолжаем, внутри нашего блока с классом <span class="block__class-name">products</span> создадим
+              еще блок (<span class="block__class-name">product</span>).
+            </p>
+            <div class="block__code">
+              &lt;<span class="block__tag-name">div</span> class=<span class="block__class-name">"products"</span
+              >&gt;
+              <span class="block__code-tab">
+                &lt;<span class="block__tag-name">div</span> class=<span class="block__class-name">"product"</span
+                >&gt;
+                <span class="block__code-tab">Готово, сейчас сюда разместим информацию о продукте</span>
+                &lt;/<span class="block__tag-name">div</span>&gt;
+              </span>
+              &lt;/<span class="block__tag-name">div</span>&gt;
+            </div>
+
+            <p class="block__text">
+              Теперь внутри блока с классом <span class="block__class-name">product</span> пишем: тег
+              <span class="block__tag-name">h2</span> с классом <span class="block__class-name">title</span> - это
+              будет название товара и тег <span class="block__tag-name">p</span> с классом
+              <span class="block__class-name">text</span> - это будет описание товара.
+            </p>
+            <div class="block__code">
+              &lt;<span class="block__tag-name">div</span> class=<span class="block__class-name">"products"</span
+              >&gt;
+              <span class="block__code-tab">
+                &lt;<span class="block__tag-name">div</span> class=<span class="block__class-name">"product"</span
+                >&gt;
+                <span class="block__code-tab">
+                  &lt;<span class="block__tag-name">h2</span> class=<span class="block__class-name">"title"</span
+                  >&gt;Название товара&lt;/<span class="block__tag-name">h2</span>&gt;
+                  <br />
+                  &lt;<span class="block__tag-name">p</span> class=<span class="block__class-name">"text"</span
+                  >&gt;Какой-то текст про товар :)&lt;/<span class="block__tag-name">p</span>&gt;
+                </span>
+                &lt;/<span class="block__tag-name">div</span>&gt;
+              </span>
+              &lt;/<span class="block__tag-name">div</span>&gt;
+            </div>
+            <p class="block__text">
+              Готово, структуру написали и давайте посмотрим на нее через рисовалку, вот как это теперь выглядит:
+            </p>
+            <a class="block__image" href="images/products.svg" target="_blank"
+              ><img src="images/products.svg" alt=""
+            /></a>
+            <p class="block__text">
+              Главный блок <span class="block__class-name">products</span> - родитель для блока
+              <span class="block__class-name">product</span>. Еще раз
+              <span class="block__class-name">PRODUCTS</span> - родитель для
+              <span class="block__class-name">PRODUCT</span>, а <span class="block__class-name">PRODUCT</span> -
+              дочерний элемент для <span class="block__class-name">PRODUCTS</span>.
+            </p>
+            <a class="block__image" href="images/products-parent-children.svg" target="_blank"
+              ><img src="images/products-parent-children.svg" alt=""
+            /></a>
+            <p class="block__text">
+              Хорошо, а теги <span class="block__tag-name">h2</span> (<span class="block__class-name">title</span>)
+              и <span class="block__tag-name">p</span> (<span class="block__class-name">text</span>), дочерние
+              элементы, родителя <span class="block__class-name">product</span> и выглядит это так:
+            </p>
+            <a class="block__image" href="images/product-parent-children.svg" target="_blank"
+              ><img src="images/product-parent-children.svg" alt=""
+            /></a>
+            <p class="block__text">
+              И еще раз :D ... . .. . . Тот, кто оборачивает элементы - родитель, тот кто внутри - дочерний элемент
+              (ребенок). Вся эта система создана для того, чтобы мы могли правильно и осознанно создавать структуру
+              сайта. Сайт состоит из блоков, все данные группируются в блоки, блоками можно управлять, центрировать
+              и тд. тп.
+            </p>
+            <p class="block__text">
+              Допустим, у нас есть 10 блоков с продуктами и их нужно поставить по центру. Если мы их не сгруппируем
+              в <span class="block__tag-name">div</span>, то придется каждый блок ставить по центру:
+            </p>
+            <a class="block__image" href="images/block-center1.svg" target="_blank"
+              ><img src="images/block-center1.svg" alt=""
+            /></a>
+            <p class="block__text">
+              Пишем команду <span class="block__command">[центрировать блок]</span>, которая поставит по центру
+              блок:
+            </p>
+            <a class="block__image" href="images/block-center2.svg" target="_blank"
+              ><img src="images/block-center2.svg" alt=""
+            /></a>
+            <p class="block__text">Теперь берем второй блок:</p>
+            <a class="block__image" href="images/block-center3.svg" target="_blank"
+              ><img src="images/block-center3.svg" alt=""
+            /></a>
+            <p class="block__text">
+              Пишем команду <span class="block__command">[центрировать блок]</span>, которая поставит по центру
+              второй блок:
+            </p>
+            <a class="block__image" href="images/block-center4.svg" target="_blank"
+              ><img src="images/block-center4.svg" alt=""
+            /></a>
+            <p class="block__text">
+              И вот так, нужно делать для каждого блока, писать команду -
+              <span class="block__command">[центрировать блок]</span>, а если блоков 20 или 30 или 12934029848,
+              получается для всех блоков писать команду <span class="block__command">[центрировать блок]</span>. В
+              общем, такой подход неправильный, думаю понятно почему..
+            </p>
+            <p class="block__text">
+              Чтобы решить данную задачу с 10 блоками, проще создать блок родитель, туда поместить 10 блоков и
+              прописать команду для родителя <span class="block__command">[центрировать блок]</span>:
+            </p>
+            <a class="block__image" href="images/final.svg" target="_blank"
+              ><img src="images/final.svg" alt=""
+            /></a>
+            <p class="block__text">
+              Рассмотренный пример демонстрирует главное преимущество группировки: она превращает хаотичный набор
+              элементов в управляемую систему. Когда вы делите интерфейс на логические блоки, вы получаете:
+            </p>
+            <ul class="block__list">
+              <li class="block__item">
+                <span class="block__tag-name">Контроль</span> — возможность управлять целыми группами элементов
+              </li>
+              <li class="block__item">
+                <span class="block__tag-name">Гибкость</span> — легко менять расположение и внешний вид блоков
+              </li>
+              <li class="block__item">
+                <span class="block__tag-name">Читаемость</span> — понятная структура кода для вас и других
+                разработчиков
+              </li>
+              <li class="block__item">
+                <span class="block__tag-name">Масштабируемость</span> — возможность легко добавлять новые элементы
+              </li>
+            </ul>
+
+            <p class="block__text">
+              Именно такой подход — от общего к частному (от крупных секций к мелким элементам) — создает ту самую
+              "правильную" архитектуру, которая отличает профессиональную верстку от любительской."
+            </p>
+            <a class="block__image" href="images/site.svg" target="_blank"><img src="images/site.svg" alt="" /></a>
+            <p class="block__text">Я придумал хороший пример описывающий идею данной темы:</p>
+            <p class="block__text block__quote">
+              Представьте: вы приготовили салат из огурцов, помидоров и лука. Гораздо удобнее положить его в
+              тарелку — и есть приятнее, и убрать в холодильник проще. А без тарелки каждый овощ приходилось бы
+              брать по отдельности!
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
