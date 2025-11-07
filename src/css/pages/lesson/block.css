@@ -133,3 +133,12 @@
 
   padding: 20px;
 }
+
+@media (max-width: 468px) {
+  .block__code-tab {
+    margin: 5px 0 5px 15px;
+  }
+  .block__code {
+    font-size: 18px;
+  }
+}
