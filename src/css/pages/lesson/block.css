@@ -30,7 +30,13 @@
 }
 
 .block__link-text {
-  font-size: 20px;
+  font-size: 22px;
+}
+
+.block__link:hover,
+.block__link-text:hover {
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
 .block__header {
@@ -55,6 +61,10 @@
   line-height: 1.5;
 
   color: #ffffff;
+}
+
+.block__text:last-child {
+  margin-bottom: 0;
 }
 
 .block__list {
