@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../src/css/main.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="header__top">
+          <h1 class="header__title">Занятие по разработке №5</h1>
+          <div class="header__back">
+            <img class="header__arrow" src="../../src/images/back.svg" alt="" />
+            <a class="header__link" href="../development.html"> назад</a>
+          </div>
+        </div>
+
+        <div class="header__block">
+          <div class="header__column">
+            <p class="header__subtitle">Тема</p>
+            <p class="header__info">Адаптивная верстка, медиазапросы @media</p>
+          </div>
+          <div class="header__column">
+            <p class="header__subtitle">Дата</p>
+            <p class="header__info">26 ноября</p>
+          </div>
+        </div>
+      </header>
+
+      <main class="lesson">
+        <section class="block">
+          <h2 class="block__title">Запись</h2>
+          <div class="block__area">
+            <a class="block__link block__link-close" target="_blank" href="">Видео отсутствует</a>
+          </div>
+        </section>
+        <section class="block">
+          <h2 class="block__title">Дополнительные материалы</h2>
+          <div class="block__area">
+            <p class="block__text">
+              <span class="block__class-name">1.</span> Что такое <span class="block__tag-name">@media</span> и для
+              чего нужно
+              <a class="block__link block__link-text" href="https://doka.guide/css/media/" target="_blank"
+                >читать тут</a
+              >
+            </p>
+            <p class="block__text">
+              <span class="block__class-name">2.</span> Единицы измерения vw, vh, vmin, vmax
+              <a class="block__link block__link-text" href="https://doka.guide/css/vw-vh/" target="_blank"
+                >читать тут</a
+              >
+            </p>
+          </div>
+        </section>
+        <section class="block">
+          <h2 class="block__title">Реализация бургер меню с анимацией</h2>
+          <div class="block__area">
+            <a class="block__link" target="_blank" href="https://codepen.io/piybebe/pen/KwzQGLb"
+              >Ссылка на пример codepen</a
+            >
+          </div>
+        </section>
+        <section class="block">
+          <h2 class="block__title">Домашнее задание</h2>
+          <div class="block__area">
+            <p class="block__text">
+              Закрепить на практике изученные на уроке принципы адаптивной верстки. Твоя задача самостоятельно
+              превратить статичный макет в полноценный адаптивный сайт, который будет корректно и красиво
+              отображается на всех типах устройств: от больших мониторов до смартфонов.
+            </p>
+            <p class="block__text">
+              Тебе необходимо внести в свой код изменения, чтобы сайт стал адаптивным. Сосредоточься на следующих
+              ключевых точках (breakpoints):
+            </p>
+          </div>
+        </section>
+        <section class="block">
+          <h2 class="block__title">Компьютеры</h2>
+          <div class="block__area">
+            <p class="block__text">
+              <span class="block__class-name">1.</span> Для больших мониторов
+              <span class="block__tag-name">(≥ 1200px)</span>:
+            </p>
+            <ul class="block__list">
+              <li class="block__item">
+                Убедись, что контент не растягивается бесконечно. Ограничьте максимальную ширину основного
+                контейнера (например, <span class="block__class-name">max-width: 1140px;</span>) и отцентрируй его.
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="block">
+          <h2 class="block__title">Планшеты</h2>
+          <div class="block__area">
+            <p class="block__text">
+              <span class="block__class-name">2.</span> Для планшетов
+              <span class="block__tag-name">(например, ≤ 992px)</span>:
+            </p>
+            <ul class="block__list">
+              <li class="block__item">
+                Преврати горизонтальное меню в <span class="text-color-orange">"гамбургер"</span> (иконку с тремя
+                полосками). Реализовать открывающееся меню на чистом CSS или JavaScript на этом этапе не
+                обязательно. Достаточно просто свернуть меню, оставив одну иконку (можно попробовать реализовать
+                выпадающее меню).
+              </li>
+              <li class="block__item">Уменьши размеры заголовков и текста для более комфортного чтения.</li>
+              <li class="block__item">
+                Уменьши внутренние и внешние отступы у блоков, чтобы они эффективнее использовали доступное
+                пространство.
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="block">
+          <h2 class="block__title">Телефоны</h2>
+          <div class="block__area">
+            <p class="block__text">
+              <span class="block__class-name">3.</span> Для мобильных телефонов
+              <span class="block__tag-name">(≤ 768px)</span>:
+            </p>
+
+            <ul class="block__list">
+              <li class="block__item">Расположи все карточки, комментария в один столбец.</li>
+              <li class="block__item">
+                Убедитесь, что все изображения масштабируются по ширине своего контейнера (<span
+                  class="block__class-name"
+                  >max-width: 100%; height: auto;</span
+                >).
+              </li>
+              <li class="block__item">
+                Логотип и иконка <span class="text-color-orange">"гамбургера"</span> должны компактно размещаться в
+                одной строке
+              </li>
+              <li class="block__item">Еще немного уменьши основные размеры шрифтов.</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
