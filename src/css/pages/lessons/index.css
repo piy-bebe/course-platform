@@ -48,6 +48,10 @@
   font-weight: 300;
 }
 
+.background-color {
+  background-color: #1d2552;
+}
+
 @media (max-width: 1240px) {
   .grid {
     grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
